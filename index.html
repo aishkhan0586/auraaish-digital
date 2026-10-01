@@ -4,14 +4,11 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta name="google-site-verification" content="1mmoQtzh-XnzibHKz5qnFddro-OlYUWqOiF3LjX2zxA" />
-   <title>Aura Aish Digital | Professional Digital Marketing & SEO Agency</title>
-    <!-- SEO Meta Tags -->
+    <title>Aura Aish Digital | Home - Professional Digital Marketing & SEO Agency</title>
     <meta name="description" content="Aura Aish Digital offers professional digital marketing, SEO, and web solutions to help your business grow online.">
-    <link rel="canonical" href="https://auraaish-digital.netlify.app/">
+    <link rel="canonical" href="https://aura-aish-digital.netlify.app/index.html">
     <meta name="robots" content="index, follow">
-    <meta name="robots" content="index, follow">
-<meta name="keywords" content="digital marketing, SEO agency, web solutions, Aura Aish Digital">
-    <!-- Tailwind CSS CDN -->
+    <meta name="keywords" content="digital marketing, SEO agency, web solutions, Aura Aish Digital">
     <script src="https://cdn.tailwindcss.com"></script>
     <script>
         tailwind.config = {
@@ -31,7 +28,6 @@
             }
         }
     </script>
-    <!-- Inter Font -->
     <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
     <style>
         body { font-family: 'Inter', sans-serif; }
@@ -41,549 +37,99 @@
 
     <header class="bg-gradient-to-r from-slate-900 via-brand-900 to-slate-900 text-white shadow-xl sticky top-0 z-50">
         <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-6 text-center">
-            <h1 class="text-3xl sm:text-4xl md:text-5xl font-extrabold tracking-tight bg-gradient-to-r from-purple-200 via-white to-purple-300 bg-clip-text text-transparent uppercase cursor-pointer" onclick="switchTab('home')">
+            <h1 class="text-3xl sm:text-4xl md:text-5xl font-extrabold tracking-tight bg-gradient-to-r from-purple-200 via-white to-purple-300 bg-clip-text text-transparent uppercase cursor-pointer" onclick="window.location.href='index.html'">
                 Aura Aish Digital
             </h1>
             <p class="mt-2 text-sm sm:text-base text-purple-200/90 max-w-2xl mx-auto font-light">
                 Empowering your digital future with elegance, cutting-edge technology, and innovative branding solutions.
             </p>
             
-            <!-- Global Navigation Bar -->
             <nav class="mt-6 flex flex-wrap justify-center items-center gap-2 sm:gap-4">
-                <button onclick="switchTab('home')" id="nav-home" class="nav-btn px-5 py-2 rounded-full text-sm font-semibold transition-all duration-300 bg-white text-brand-900 shadow-md">
+                <a href="index.html" class="px-5 py-2 rounded-full text-sm font-semibold transition-all duration-300 bg-white text-brand-900 shadow-md">
                     Home
-                </button>
-                <button onclick="switchTab('services')" id="nav-services" class="nav-btn px-5 py-2 rounded-full text-sm font-semibold transition-all duration-300 bg-purple-950/60 text-purple-200 hover:bg-purple-800/60 hover:text-white">
+                </a>
+                <a href="services.html" class="px-5 py-2 rounded-full text-sm font-semibold transition-all duration-300 bg-purple-950/60 text-purple-200 hover:bg-purple-800/60 hover:text-white">
                     Services
-                </button>
-                <button onclick="switchTab('faqs')" id="nav-faqs" class="nav-btn px-5 py-2 rounded-full text-sm font-semibold transition-all duration-300 bg-purple-950/60 text-purple-200 hover:bg-purple-800/60 hover:text-white">
+                </a>
+                <a href="faqs.html" class="px-5 py-2 rounded-full text-sm font-semibold transition-all duration-300 bg-purple-950/60 text-purple-200 hover:bg-purple-800/60 hover:text-white">
                     FAQs
-                </button>
-                <button onclick="switchTab('ai-hub')" id="nav-ai-hub" class="nav-btn px-5 py-2 rounded-full text-sm font-semibold transition-all duration-300 bg-purple-950/60 text-purple-200 hover:bg-purple-800/60 hover:text-white flex items-center space-x-1.5">
+                </a>
+                <a href="ai-hub.html" class="px-5 py-2 rounded-full text-sm font-semibold transition-all duration-300 bg-purple-950/60 text-purple-200 hover:bg-purple-800/60 hover:text-white flex items-center space-x-1.5">
                     <span>✨ AI Assistant & Hub</span>
-                </button>
+                </a>
             </nav>
         </div>
     </header>
 
-    <main class="flex-grow max-w-7xl w-full mx-auto px-4 sm:px-6 lg:px-8 py-10">
-
-        <!-- ================= HOME PAGE ================= -->
-        <section id="page-home" class="space-y-12">
-            
-            <!-- Hero Workspace Image -->
-            <div class="bg-white rounded-3xl shadow-xl overflow-hidden border border-purple-100 transition-all duration-500">
-                <div class="relative h-72 sm:h-[420px] md:h-[480px] w-full overflow-hidden bg-slate-900">
-                    <img src="https://images.unsplash.com/photo-1531482615713-2afd69097998?auto=format&fit=crop&w=1200&q=80" 
-                         onerror="this.src='https://placehold.co/1200x500/4c1d95/ffffff?text=Aura+Aish+Digital'" 
-                         alt="Digital Agency Workspace" 
-                         class="w-full h-full object-cover opacity-85 transform hover:scale-105 transition-transform duration-700">
-                    <div class="absolute inset-0 bg-gradient-to-t from-slate-950/80 via-slate-950/20 to-transparent flex items-end p-6 sm:p-10">
-                        <div>
-                            <span class="bg-brand-600 text-white text-xs font-bold uppercase tracking-widest px-3 py-1 rounded-full">Workspace & Innovation</span>
-                            <h2 class="text-2xl sm:text-4xl font-bold text-white mt-2">Transforming Ideas Into Digital Reality</h2>
-                        </div>
-                    </div>
-                </div>
-
-                <div class="p-6 sm:p-10 lg:p-12 space-y-6">
-                    <div class="max-w-3xl">
-                        <h3 class="text-2xl sm:text-3xl font-bold text-slate-900">About Our Website</h3>
-                        <p class="mt-4 text-slate-600 leading-relaxed text-base sm:text-lg">
-                            Welcome to Aura Aish Digital's online hub. Our platform serves as your gateway to premium digital transformation, professional branding, and high-performance web engineering. We designed this space to showcase how we bridge the gap between creative elegance and robust technology to scale modern businesses worldwide.
-                        </p>
-                    </div>
-                    <div class="grid grid-cols-1 sm:grid-cols-3 gap-6 pt-6 border-t border-slate-100">
-                        <div class="p-5 rounded-2xl bg-purple-50/70 border border-purple-100">
-                            <h4 class="font-bold text-brand-900 text-lg">100+</h4>
-                            <p class="text-sm text-slate-600 mt-1">Successful Global Projects Delivered</p>
-                        </div>
-                        <div class="p-5 rounded-2xl bg-purple-50/70 border border-purple-100">
-                            <h4 class="font-bold text-brand-900 text-lg">99%</h4>
-                            <p class="text-sm text-slate-600 mt-1">Client Satisfaction Rate</p>
-                        </div>
-                        <div class="p-5 rounded-2xl bg-purple-50/70 border border-purple-100">
-                            <h4 class="font-bold text-brand-900 text-lg">24/7</h4>
-                            <p class="text-sm text-slate-600 mt-1">Dedicated Support & Maintenance</p>
-                        </div>
+    <main class="flex-grow max-w-7xl w-full mx-auto px-4 sm:px-6 lg:px-8 py-10 space-y-12">
+        
+        <div class="bg-white rounded-3xl shadow-xl overflow-hidden border border-purple-100 transition-all duration-500">
+            <div class="relative h-72 sm:h-[420px] md:h-[480px] w-full overflow-hidden bg-slate-900">
+                <img src="https://images.unsplash.com/photo-1531482615713-2afd69097998?auto=format&fit=crop&w=1200&q=80" 
+                     onerror="this.src='https://placehold.co/1200x500/4c1d95/ffffff?text=Aura+Aish+Digital'" 
+                     alt="Digital Agency Workspace" 
+                     class="w-full h-full object-cover opacity-85 transform hover:scale-105 transition-transform duration-700">
+                <div class="absolute inset-0 bg-gradient-to-t from-slate-950/80 via-slate-950/20 to-transparent flex items-end p-6 sm:p-10">
+                    <div>
+                        <span class="bg-brand-600 text-white text-xs font-bold uppercase tracking-widest px-3 py-1 rounded-full">Workspace & Innovation</span>
+                        <h2 class="text-2xl sm:text-4xl font-bold text-white mt-2">Transforming Ideas Into Digital Reality</h2>
                     </div>
                 </div>
             </div>
 
-            <!-- Why Choose Us Section -->
-            <div class="bg-white rounded-3xl shadow-xl p-6 sm:p-10 lg:p-12 border border-purple-100">
-                <div class="text-center max-w-2xl mx-auto mb-10">
-                    <h3 class="text-2xl sm:text-3xl font-bold text-slate-900">Why Choose Us</h3>
-                    <p class="text-slate-600 mt-2">Discover what sets Aura Aish Digital apart as your ultimate growth partner.</p>
+            <div class="p-6 sm:p-10 lg:p-12 space-y-6">
+                <div class="max-w-3xl">
+                    <h3 class="text-2xl sm:text-3xl font-bold text-slate-900">About Our Website</h3>
+                    <p class="mt-4 text-slate-600 leading-relaxed text-base sm:text-lg">
+                        Welcome to Aura Aish Digital's online hub. Our platform serves as your gateway to premium digital transformation, professional branding, and high-performance web engineering. We designed this space to showcase how we bridge the gap between creative elegance and robust technology to scale modern businesses worldwide.
+                    </p>
                 </div>
-                <div class="grid grid-cols-1 md:grid-cols-3 gap-8">
-                    <div class="p-6 rounded-2xl bg-slate-50 border border-slate-100 hover:shadow-lg transition-shadow">
-                        <div class="w-12 h-12 rounded-xl bg-brand-600 text-white flex items-center justify-center font-bold text-xl mb-4">✨</div>
-                        <h4 class="font-bold text-lg text-slate-900">Tailored Solutions</h4>
-                        <p class="text-slate-600 mt-2 text-sm">We don't do cookie-cutter. Every strategy and line of code is customized to your brand identity.</p>
+                <div class="grid grid-cols-1 sm:grid-cols-3 gap-6 pt-6 border-t border-slate-100">
+                    <div class="p-5 rounded-2xl bg-purple-50/70 border border-purple-100">
+                        <h4 class="font-bold text-brand-900 text-lg">100+</h4>
+                        <p class="text-sm text-slate-600 mt-1">Successful Global Projects Delivered</p>
                     </div>
-                    <div class="p-6 rounded-2xl bg-slate-50 border border-slate-100 hover:shadow-lg transition-shadow">
-                        <div class="w-12 h-12 rounded-xl bg-brand-600 text-white flex items-center justify-center font-bold text-xl mb-4">🚀</div>
-                        <h4 class="font-bold text-lg text-slate-900">Cutting-Edge Tech</h4>
-                        <p class="text-slate-600 mt-2 text-sm">Powered by modern web stacks, lightning-fast performance, and secure cloud infrastructure.</p>
+                    <div class="p-5 rounded-2xl bg-purple-50/70 border border-purple-100">
+                        <h4 class="font-bold text-brand-900 text-lg">99%</h4>
+                        <p class="text-sm text-slate-600 mt-1">Client Satisfaction Rate</p>
                     </div>
-                    <div class="p-6 rounded-2xl bg-slate-50 border border-slate-100 hover:shadow-lg transition-shadow">
-                        <div class="w-12 h-12 rounded-xl bg-brand-600 text-white flex items-center justify-center font-bold text-xl mb-4">💡</div>
-                        <h4 class="font-bold text-lg text-slate-900">Proven Results</h4>
-                        <p class="text-slate-600 mt-2 text-sm">Data-driven marketing and user-centric design engineered to maximize your ROI and conversions.</p>
+                    <div class="p-5 rounded-2xl bg-purple-50/70 border border-purple-100">
+                        <h4 class="font-bold text-brand-900 text-lg">24/7</h4>
+                        <p class="text-sm text-slate-600 mt-1">Dedicated Support & Maintenance</p>
                     </div>
                 </div>
             </div>
+        </div>
 
-            <!-- External Resource Links -->
-            <div class="bg-white rounded-3xl shadow-xl p-6 sm:p-10 lg:p-12 border border-purple-100">
-                <div class="text-center max-w-2xl mx-auto mb-8">
-                    <h3 class="text-2xl sm:text-3xl font-bold text-slate-900">Explore Industry Tools & Platforms</h3>
-                    <p class="text-slate-600 mt-2">Clicking these opens official platforms in a new tab.</p>
+        <div class="bg-white rounded-3xl shadow-xl p-6 sm:p-10 lg:p-12 border border-purple-100">
+            <div class="text-center max-w-2xl mx-auto mb-10">
+                <h3 class="text-2xl sm:text-3xl font-bold text-slate-900">Why Choose Us</h3>
+                <p class="text-slate-600 mt-2">Discover what sets Aura Aish Digital apart as your ultimate growth partner.</p>
+            </div>
+            <div class="grid grid-cols-1 md:grid-cols-3 gap-8">
+                <div class="p-6 rounded-2xl bg-slate-50 border border-slate-100 hover:shadow-lg transition-shadow">
+                    <div class="w-12 h-12 rounded-xl bg-brand-600 text-white flex items-center justify-center font-bold text-xl mb-4">✨</div>
+                    <h4 class="font-bold text-lg text-slate-900">Tailored Solutions</h4>
+                    <p class="text-slate-600 mt-2 text-sm">We don't do cookie-cutter. Every strategy and line of code is customized to your brand identity.</p>
                 </div>
-                <div class="grid grid-cols-2 sm:grid-cols-3 md:grid-cols-5 gap-4">
-                    <a href="https://www.hubspot.com" target="_blank" rel="noopener noreferrer" class="p-4 rounded-2xl bg-slate-50 border border-slate-200 hover:border-brand-600 hover:bg-purple-50/50 hover:shadow-md transition-all text-center flex flex-col items-center justify-center space-y-2 group cursor-pointer">
-                        <span class="text-2xl">📈</span>
-                        <span class="font-semibold text-slate-800 group-hover:text-brand-600 text-sm">HubSpot</span>
-                    </a>
-                    <a href="https://techcrunch.com" target="_blank" rel="noopener noreferrer" class="p-4 rounded-2xl bg-slate-50 border border-slate-200 hover:border-brand-600 hover:bg-purple-50/50 hover:shadow-md transition-all text-center flex flex-col items-center justify-center space-y-2 group cursor-pointer">
-                        <span class="text-2xl">📰</span>
-                        <span class="font-semibold text-slate-800 group-hover:text-brand-600 text-sm">TechCrunch</span>
-                    </a>
-                    <a href="https://www.google.com" target="_blank" rel="noopener noreferrer" class="p-4 rounded-2xl bg-slate-50 border border-slate-200 hover:border-brand-600 hover:bg-purple-50/50 hover:shadow-md transition-all text-center flex flex-col items-center justify-center space-y-2 group cursor-pointer">
-                        <span class="text-2xl">🔍</span>
-                        <span class="font-semibold text-slate-800 group-hover:text-brand-600 text-sm">Google</span>
-                    </a>
-                    <a href="https://www.linkedin.com" target="_blank" rel="noopener noreferrer" class="p-4 rounded-2xl bg-slate-50 border border-slate-200 hover:border-brand-600 hover:bg-purple-50/50 hover:shadow-md transition-all text-center flex flex-col items-center justify-center space-y-2 group cursor-pointer">
-                        <span class="text-2xl">💼</span>
-                        <span class="font-semibold text-slate-800 group-hover:text-brand-600 text-sm">LinkedIn</span>
-                    </a>
-                    <a href="https://twitter.com" target="_blank" rel="noopener noreferrer" class="p-4 rounded-2xl bg-slate-50 border border-slate-200 hover:border-brand-600 hover:bg-purple-50/50 hover:shadow-md transition-all text-center flex flex-col items-center justify-center space-y-2 group cursor-pointer">
-                        <span class="text-2xl">🐦</span>
-                        <span class="font-semibold text-slate-800 group-hover:text-brand-600 text-sm">Twitter / X</span>
-                    </a>
+                <div class="p-6 rounded-2xl bg-slate-50 border border-slate-100 hover:shadow-lg transition-shadow">
+                    <div class="w-12 h-12 rounded-xl bg-brand-600 text-white flex items-center justify-center font-bold text-xl mb-4">🚀</div>
+                    <h4 class="font-bold text-lg text-slate-900">Cutting-Edge Tech</h4>
+                    <p class="text-slate-600 mt-2 text-sm">Powered by modern web stacks, lightning-fast performance, and secure cloud infrastructure.</p>
+                </div>
+                <div class="p-6 rounded-2xl bg-slate-50 border border-slate-100 hover:shadow-lg transition-shadow">
+                    <div class="w-12 h-12 rounded-xl bg-brand-600 text-white flex items-center justify-center font-bold text-xl mb-4">💡</div>
+                    <h4 class="font-bold text-lg text-slate-900">Proven Results</h4>
+                    <p class="text-slate-600 mt-2 text-sm">Data-driven marketing and user-centric design engineered to maximize your ROI and conversions.</p>
                 </div>
             </div>
-        </section>
-
-        <!-- ================= SERVICES PAGE ================= -->
-        <section id="page-services" class="space-y-12 hidden">
-            <div class="bg-white rounded-3xl shadow-xl overflow-hidden border border-purple-100">
-                <div class="relative h-64 sm:h-80 w-full overflow-hidden bg-slate-900">
-                    <img src="https://images.unsplash.com/photo-1522071820081-009f0129c71c?auto=format&fit=crop&w=1200&q=80" 
-                         onerror="this.src='https://placehold.co/1200x500/5b21b6/ffffff?text=Our+Services'" 
-                         alt="Team working on services" 
-                         class="w-full h-full object-cover opacity-80">
-                    <div class="absolute inset-0 bg-gradient-to-t from-slate-950/90 via-slate-950/30 to-transparent flex items-center justify-center text-center p-6">
-                        <div>
-                            <span class="bg-purple-600 text-white text-xs font-bold uppercase tracking-widest px-3 py-1 rounded-full">Expertise</span>
-                            <h2 class="text-3xl sm:text-5xl font-extrabold text-white mt-3">Our Digital Services</h2>
-                            <p class="text-purple-200 mt-2 max-w-xl mx-auto text-sm sm:text-base">Comprehensive solutions designed to transform your online presence.</p>
-                        </div>
-                    </div>
-                </div>
-
-                <div class="p-6 sm:p-10 lg:p-12 space-y-8">
-                    <div class="grid grid-cols-1 md:grid-cols-2 gap-8">
-                        <div class="p-6 rounded-2xl border border-purple-100 bg-purple-50/30 hover:bg-purple-50/80 transition-all">
-                            <h3 class="text-xl font-bold text-brand-900">Web Development</h3>
-                            <p class="text-slate-600 mt-2 text-sm sm:text-base">Building high-performing, responsive websites and web applications using modern frameworks and robust backend architectures.</p>
-                        </div>
-                        <div class="p-6 rounded-2xl border border-purple-100 bg-purple-50/30 hover:bg-purple-50/80 transition-all">
-                            <h3 class="text-xl font-bold text-brand-900">Brand Identity & UI/UX Design</h3>
-                            <p class="text-slate-600 mt-2 text-sm sm:text-base">Stunning visual designs, memorable logos, and intuitive user interfaces designed to captivate your audience instantly.</p>
-                        </div>
-                        <div class="p-6 rounded-2xl border border-purple-100 bg-purple-50/30 hover:bg-purple-50/80 transition-all">
-                            <h3 class="text-xl font-bold text-brand-900">Digital Marketing & SEO</h3>
-                            <p class="text-slate-600 mt-2 text-sm sm:text-base">Strategic search engine optimization and social campaigns to drive targeted organic traffic and maximize sales.</p>
-                        </div>
-                        <div class="p-6 rounded-2xl border border-purple-100 bg-purple-50/30 hover:bg-purple-50/80 transition-all">
-                            <h3 class="text-xl font-bold text-brand-900">AI & Automation Consulting</h3>
-                            <p class="text-slate-600 mt-2 text-sm sm:text-base">Integrating cutting-edge AI workflows and automated tools into your business operations for ultimate efficiency.</p>
-                        </div>
-                    </div>
-
-                    <div class="text-center pt-6 border-t border-slate-100 flex flex-wrap justify-center gap-4">
-                        <button onclick="switchTab('home')" class="inline-flex items-center space-x-2 bg-brand-600 hover:bg-brand-700 text-white font-semibold px-6 py-3 rounded-full transition-all shadow-md">
-                            <span>← Back to Home Page</span>
-                        </button>
-                        <button onclick="switchTab('faqs')" class="inline-flex items-center space-x-2 bg-slate-900 hover:bg-slate-800 text-white font-semibold px-6 py-3 rounded-full transition-all shadow-md">
-                            <span>View FAQs →</span>
-                        </button>
-                    </div>
-                </div>
-            </div>
-        </section>
-
-        <!-- ================= FAQS PAGE ================= -->
-        <section id="page-faqs" class="space-y-12 hidden">
-            <div class="bg-white rounded-3xl shadow-xl overflow-hidden border border-purple-100">
-                <div class="relative h-64 sm:h-80 w-full overflow-hidden bg-slate-900">
-                    <img src="https://images.unsplash.com/photo-1557804506-669a67965ba0?auto=format&fit=crop&w=1200&q=80" 
-                         onerror="this.src='https://placehold.co/1200x500/4c1d95/ffffff?text=FAQs'" 
-                         alt="Frequently Asked Questions" 
-                         class="w-full h-full object-cover opacity-80">
-                    <div class="absolute inset-0 bg-gradient-to-t from-slate-950/90 via-slate-950/30 to-transparent flex items-center justify-center text-center p-6">
-                        <div>
-                            <span class="bg-purple-600 text-white text-xs font-bold uppercase tracking-widest px-3 py-1 rounded-full">Support</span>
-                            <h2 class="text-3xl sm:text-5xl font-extrabold text-white mt-3">Frequently Asked Questions</h2>
-                            <p class="text-purple-200 mt-2 max-w-xl mx-auto text-sm sm:text-base">Got questions? We have clear and concise answers.</p>
-                        </div>
-                    </div>
-                </div>
-
-                <div class="p-6 sm:p-10 lg:p-12 max-w-4xl mx-auto space-y-6">
-                    <div class="space-y-4">
-                        <!-- FAQ Item 1 -->
-                        <div class="border border-slate-200 rounded-2xl overflow-hidden bg-slate-50 transition-all">
-                            <button onclick="toggleFaq(1)" class="w-full p-6 text-left font-bold text-lg text-slate-900 flex justify-between items-center focus:outline-none">
-                                <span>Q: What is included in Web Development?</span>
-                                <span id="faq-icon-1" class="transform transition-transform duration-300 text-brand-600 text-xl font-bold">↓</span>
-                            </button>
-                            <div id="faq-content-1" class="hidden px-6 pb-6 text-slate-600 text-sm sm:text-base border-t border-slate-200/60 pt-4">
-                                <p><strong>A:</strong> It involves building high-performing, responsive websites and web applications using modern frameworks and robust backend architectures.</p>
-                            </div>
-                        </div>
-
-                        <!-- FAQ Item 2 -->
-                        <div class="border border-slate-200 rounded-2xl overflow-hidden bg-slate-50 transition-all">
-                            <button onclick="toggleFaq(2)" class="w-full p-6 text-left font-bold text-lg text-slate-900 flex justify-between items-center focus:outline-none">
-                                <span>Q: What does Brand Identity & UI/UX Design cover?</span>
-                                <span id="faq-icon-2" class="transform transition-transform duration-300 text-brand-600 text-xl font-bold">↓</span>
-                            </button>
-                            <div id="faq-content-2" class="hidden px-6 pb-6 text-slate-600 text-sm sm:text-base border-t border-slate-200/60 pt-4">
-                                <p><strong>A:</strong> It features stunning visual designs, memorable logos, and intuitive user interfaces designed to captivate your audience instantly.</p>
-                            </div>
-                        </div>
-
-                        <!-- FAQ Item 3 -->
-                        <div class="border border-slate-200 rounded-2xl overflow-hidden bg-slate-50 transition-all">
-                            <button onclick="toggleFaq(3)" class="w-full p-6 text-left font-bold text-lg text-slate-900 flex justify-between items-center focus:outline-none">
-                                <span>Q: What is the goal of Digital Marketing & SEO?</span>
-                                <span id="faq-icon-3" class="transform transition-transform duration-300 text-brand-600 text-xl font-bold">↓</span>
-                            </button>
-                            <div id="faq-content-3" class="hidden px-6 pb-6 text-slate-600 text-sm sm:text-base border-t border-slate-200/60 pt-4">
-                                <p><strong>A:</strong> It utilizes strategic search engine optimization and social campaigns to drive targeted organic traffic and maximize sales.</p>
-                            </div>
-                        </div>
-
-                        <!-- FAQ Item 4 -->
-                        <div class="border border-slate-200 rounded-2xl overflow-hidden bg-slate-50 transition-all">
-                            <button onclick="toggleFaq(4)" class="w-full p-6 text-left font-bold text-lg text-slate-900 flex justify-between items-center focus:outline-none">
-                                <span>Q: How does AI & Automation Consulting help?</span>
-                                <span id="faq-icon-4" class="transform transition-transform duration-300 text-brand-600 text-xl font-bold">↓</span>
-                            </button>
-                            <div id="faq-content-4" class="hidden px-6 pb-6 text-slate-600 text-sm sm:text-base border-t border-slate-200/60 pt-4">
-                                <p><strong>A:</strong> It integrates cutting-edge AI workflows and automated tools into your business operations for ultimate efficiency.</p>
-                            </div>
-                        </div>
-                    </div>
-
-                    <div class="text-center pt-6 border-t border-slate-200 flex flex-wrap justify-center gap-4">
-                        <button onclick="switchTab('home')" class="inline-flex items-center space-x-2 bg-brand-600 hover:bg-brand-700 text-white font-semibold px-6 py-3 rounded-full transition-all shadow-md">
-                            <span>← Back to Home Page</span>
-                        </button>
-                        <button onclick="switchTab('services')" class="inline-flex items-center space-x-2 bg-slate-900 hover:bg-slate-800 text-white font-semibold px-6 py-3 rounded-full transition-all shadow-md">
-                            <span>View Services →</span>
-                        </button>
-                    </div>
-                </div>
-            </div>
-        </section>
-
-        <!-- ================= AI ASSISTANT & HUB PAGE ================= -->
-        <section id="page-ai-hub" class="space-y-12 hidden">
-            <div class="bg-white rounded-3xl shadow-xl overflow-hidden border border-purple-100">
-                <div class="relative h-64 sm:h-80 w-full overflow-hidden bg-slate-900">
-                    <img src="https://images.unsplash.com/photo-1618005182384-a83a8bd57fbe?auto=format&fit=crop&w=1200&q=80" 
-                         onerror="this.src='https://placehold.co/1200x500/5b21b6/ffffff?text=AI+Assistant'" 
-                         alt="AI Technology" 
-                         class="w-full h-full object-cover opacity-80">
-                    <div class="absolute inset-0 bg-gradient-to-t from-slate-950/90 via-slate-950/30 to-transparent flex items-center justify-center text-center p-6">
-                        <div>
-                            <span class="bg-purple-600 text-white text-xs font-bold uppercase tracking-widest px-3 py-1 rounded-full">Interactive AI Assistant</span>
-                            <h2 class="text-3xl sm:text-5xl font-extrabold text-white mt-3">Aura AI Assistant & Generator</h2>
-                            <p class="text-purple-200 mt-2 max-w-xl mx-auto text-sm sm:text-base">Chat with our AI business consultant or generate custom brand visuals instantly.</p>
-                        </div>
-                    </div>
-                </div>
-
-                <div class="p-6 sm:p-10 lg:p-12 space-y-12">
-                    
-                    <!-- Feature 1: AI Chatbot -->
-                    <div class="bg-slate-50 rounded-3xl p-6 sm:p-8 border border-purple-100 shadow-sm space-y-6">
-                        <div class="flex items-center space-x-3">
-                            <span class="text-3xl">🤖</span>
-                            <div>
-                                <h3 class="text-xl font-bold text-slate-900">Aura Digital Business Consultant</h3>
-                                <p class="text-sm text-slate-600">Ask questions about scaling your brand, SEO strategies, or tech development.</p>
-                            </div>
-                        </div>
-
-                        <!-- Chat Messages Container -->
-                        <div id="chat-messages" class="h-80 overflow-y-auto bg-white rounded-2xl p-4 border border-slate-200 space-y-4">
-                            <div class="flex items-start space-x-3">
-                                <div class="w-8 h-8 rounded-full bg-brand-600 text-white flex items-center justify-center font-bold text-xs">AI</div>
-                                <div class="bg-purple-50 text-slate-800 p-4 rounded-2xl max-w-lg text-sm">
-                                    Hello! I am your Aura Aish Digital AI Assistant. How can I help you elevate your business today?
-                                </div>
-                            </div>
-                        </div>
-
-                        <!-- Quick Prompts -->
-                        <div class="flex flex-wrap gap-2">
-                            <button type="button" onclick="sendQuickPrompt('How can Aura Aish Digital help me scale my e-commerce brand?')" class="text-xs bg-purple-100 hover:bg-purple-200 text-brand-900 px-3 py-1.5 rounded-full font-medium transition-colors">
-                                💡 Scale my brand
-                            </button>
-                            <button type="button" onclick="sendQuickPrompt('What are the top SEO strategies for 2026?')" class="text-xs bg-purple-100 hover:bg-purple-200 text-brand-900 px-3 py-1.5 rounded-full font-medium transition-colors">
-                                📈 Top SEO Strategies
-                            </button>
-                            <button type="button" onclick="sendQuickPrompt('Explain the importance of UI/UX design in modern websites.')" class="text-xs bg-purple-100 hover:bg-purple-200 text-brand-900 px-3 py-1.5 rounded-full font-medium transition-colors">
-                                🎨 UI/UX Importance
-                            </button>
-                        </div>
-
-                        <!-- Chat Input Form -->
-                        <form id="chat-form" onsubmit="handleChatSubmit(event)" class="flex gap-3">
-                            <input type="text" id="chat-input" placeholder="Type your business question here..." required
-                                   class="flex-grow px-4 py-3 rounded-xl border border-slate-300 focus:outline-none focus:border-brand-600 text-sm bg-white">
-                            <button type="submit" id="chat-submit-btn" class="bg-brand-600 hover:bg-brand-700 text-white font-semibold px-6 py-3 rounded-xl transition-all shadow-md text-sm">
-                                Send
-                            </button>
-                        </form>
-                    </div>
-
-                    <!-- Feature 2: AI Image Generator -->
-                    <div class="bg-slate-50 rounded-3xl p-6 sm:p-8 border border-purple-100 shadow-sm space-y-6">
-                        <div class="flex items-center space-x-3">
-                            <span class="text-3xl">🎨</span>
-                            <div>
-                                <h3 class="text-xl font-bold text-slate-900">AI Brand Logo & Visual Generator</h3>
-                                <p class="text-sm text-slate-600">Create stunning conceptual graphics and logos instantly.</p>
-                            </div>
-                        </div>
-
-                        <form id="image-form" onsubmit="handleImageSubmit(event)" class="space-y-4">
-                            <div>
-                                <label class="block text-xs font-semibold uppercase tracking-wider text-slate-600 mb-2">Image Prompt</label>
-                                <input type="text" id="image-prompt" placeholder="e.g., A luxury golden crown logo with purple aura for a digital tech agency" required
-                                       class="w-full px-4 py-3 rounded-xl border border-slate-300 focus:outline-none focus:border-brand-600 text-sm bg-white">
-                            </div>
-                            <div class="flex flex-wrap gap-4 items-center">
-                                <div>
-                                    <label class="block text-xs font-semibold uppercase tracking-wider text-slate-600 mb-1">Aspect Ratio</label>
-                                    <select id="image-aspect" class="px-4 py-2 rounded-xl border border-slate-300 focus:outline-none focus:border-brand-600 text-sm bg-white">
-                                        <option value="1:1">1:1 Square</option>
-                                        <option value="16:9" selected>16:9 Landscape</option>
-                                        <option value="9:16">9:16 Portrait</option>
-                                    </select>
-                                </div>
-                                <div class="pt-5">
-                                    <button type="submit" id="image-submit-btn" class="bg-brand-600 hover:bg-brand-700 text-white font-semibold px-8 py-3 rounded-xl transition-all shadow-md text-sm">
-                                        Generate Image
-                                    </button>
-                                </div>
-                            </div>
-                        </form>
-
-                        <!-- Image Result Container -->
-                        <div id="image-result-container" class="hidden pt-4 text-center space-y-4">
-                            <div class="relative rounded-2xl overflow-hidden border border-slate-300 bg-white inline-block max-w-full shadow-lg">
-                                <img id="generated-image" src="" alt="Generated AI Graphic" class="max-h-[450px] w-auto mx-auto object-contain">
-                            </div>
-                            <div>
-                                <p id="image-caption" class="text-xs text-slate-500"></p>
-                            </div>
-                        </div>
-
-                        <!-- Image Loading Spinner -->
-                        <div id="image-loader" class="hidden py-12 text-center space-y-3">
-                            <div class="inline-block animate-spin rounded-full h-10 w-10 border-4 border-brand-600 border-t-transparent"></div>
-                            <p class="text-sm font-medium text-slate-600">Generating your AI masterpiece...</p>
-                        </div>
-                    </div>
-
-                    <div class="text-center pt-6 border-t border-slate-200">
-                        <button onclick="switchTab('home')" class="inline-flex items-center space-x-2 bg-brand-600 hover:bg-brand-700 text-white font-semibold px-6 py-3 rounded-full transition-all shadow-md">
-                            <span>← Back to Home Page</span>
-                        </button>
-                    </div>
-                </div>
-            </div>
-        </section>
+        </div>
 
     </main>
 
-    <footer class="bg-slate-900 text-slate-400 py-10 border-t border-slate-800 mt-16">
-        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 flex flex-col sm:flex-row justify-between items-center space-y-4 sm:space-y-0">
-            <div class="text-center sm:text-left">
-                <span class="text-white font-bold text-lg tracking-wide uppercase">Aura Aish Digital</span>
-                <p class="text-sm mt-1">Elevating brands with elegance and advanced technology.</p>
-            </div>
-            <div class="text-sm text-slate-500 text-center sm:text-right">
-                &copy; 2026 Aura Aish Digital. All rights reserved.
-            </div>
-        </div>
+    <footer class="bg-slate-900 text-purple-200 text-center py-6 border-t border-purple-950 mt-12">
+        <p class="text-sm">&copy; 2026 Aura Aish Digital. All rights reserved.</p>
     </footer>
 
-    <!-- JavaScript for Interactivity & AI Assistant Fixes -->
-    <script>
-        // Tab Switching Logic
-        function switchTab(tabId) {
-            const tabs = ['home', 'services', 'faqs', 'ai-hub'];
-            tabs.forEach(tab => {
-                const section = document.getElementById(`page-${tab}`);
-                const btn = document.getElementById(`nav-${tab}`);
-                if (section) {
-                    if (tab === tabId) {
-                        section.classList.remove('hidden');
-                    } else {
-                        section.classList.add('hidden');
-                    }
-                }
-                if (btn) {
-                    if (tab === tabId) {
-                        btn.className = "nav-btn px-5 py-2 rounded-full text-sm font-semibold transition-all duration-300 bg-white text-brand-900 shadow-md";
-                    } else {
-                        btn.className = "nav-btn px-5 py-2 rounded-full text-sm font-semibold transition-all duration-300 bg-purple-950/60 text-purple-200 hover:bg-purple-800/60 hover:text-white";
-                    }
-                }
-            });
-            window.scrollTo({ top: 0, behavior: 'smooth' });
-        }
-
-        // FAQ Toggle Logic
-        function toggleFaq(id) {
-            const content = document.getElementById(`faq-content-${id}`);
-            const icon = document.getElementById(`faq-icon-${id}`);
-            if (content.classList.contains('hidden')) {
-                content.classList.remove('hidden');
-                icon.style.transform = 'rotate(180deg)';
-            } else {
-                content.classList.add('hidden');
-                icon.style.transform = 'rotate(0deg)';
-            }
-        }
-
-        // Quick Prompt Logic
-        function sendQuickPrompt(promptText) {
-            const input = document.getElementById('chat-input');
-            if (input) {
-                input.value = promptText;
-                const form = document.getElementById('chat-form');
-                if (form) {
-                    form.dispatchEvent(new Event('submit', { cancelable: true }));
-                }
-            }
-        }
-
-        // Chat Submit Handler (Fixed and Fully Working)
-        function handleChatSubmit(event) {
-            event.preventDefault();
-            const input = document.getElementById('chat-input');
-            if (!input) return;
-            
-            const message = input.value.trim();
-            if (!message) return;
-
-            const chatMessages = document.getElementById('chat-messages');
-
-            // User Message Bubble
-            const userBubble = document.createElement('div');
-            userBubble.className = 'flex items-start space-x-3 justify-end';
-            userBubble.innerHTML = `
-                <div class="bg-brand-600 text-white p-4 rounded-2xl max-w-lg text-sm shadow-sm">
-                    ${escapeHtml(message)}
-                </div>
-                <div class="w-8 h-8 rounded-full bg-slate-800 text-white flex items-center justify-center font-bold text-xs flex-shrink-0">You</div>
-            `;
-            chatMessages.appendChild(userBubble);
-            input.value = '';
-            chatMessages.scrollTop = chatMessages.scrollHeight;
-
-            // AI Loading Bubble
-            const aiLoadingId = 'ai-loading-' + Date.now();
-            const aiLoadingBubble = document.createElement('div');
-            aiLoadingBubble.id = aiLoadingId;
-            aiLoadingBubble.className = 'flex items-start space-x-3';
-            aiLoadingBubble.innerHTML = `
-                <div class="w-8 h-8 rounded-full bg-brand-600 text-white flex items-center justify-center font-bold text-xs flex-shrink-0">AI</div>
-                <div class="bg-purple-50 text-slate-800 p-4 rounded-2xl max-w-lg text-sm italic text-slate-500">
-                    Thinking...
-                </div>
-            `;
-            chatMessages.appendChild(aiLoadingBubble);
-            chatMessages.scrollTop = chatMessages.scrollHeight;
-
-            // Intelligent dynamic responses based on user input
-            setTimeout(() => {
-                const loadingElem = document.getElementById(aiLoadingId);
-                if (loadingElem) loadingElem.remove();
-
-                let aiResponseText = `Thank you for your question regarding <strong>"${escapeHtml(message)}"</strong>. At Aura Aish Digital, we combine cutting-edge tech, robust SEO, and stunning UI/UX to ensure your brand scales rapidly and sustainably. How else can I assist your digital journey today?`;
-
-                const lowerMsg = message.toLowerCase();
-                if (lowerMsg.includes('scale') || lowerMsg.includes('e-commerce')) {
-                    aiResponseText = `To scale your e-commerce brand effectively, Aura Aish Digital recommends combining targeted long-tail SEO, JSON-LD structured product data for Google rich snippets, and high-conversion UI/UX design. Would you like a detailed strategy breakdown?`;
-                } else if (lowerMsg.includes('seo') || lowerMsg.includes('strategy')) {
-                    aiResponseText = `Top SEO strategies for 2026 include optimizing for AI-driven search engines, implementing rigorous schema markup (JSON-LD), focusing on semantic keyword research, and ensuring blazing-fast mobile site performance.`;
-                } else if (lowerMsg.includes('ui/ux') || lowerMsg.includes('design')) {
-                    aiResponseText = `UI/UX design is crucial because it builds instant trust, lowers bounce rates, and guides users smoothly toward conversion actions. Great design paired with fast web development ensures maximum ROI!`;
-                }
-
-                const aiReplyBubble = document.createElement('div');
-                aiReplyBubble.className = 'flex items-start space-x-3';
-                aiReplyBubble.innerHTML = `
-                    <div class="w-8 h-8 rounded-full bg-brand-600 text-white flex items-center justify-center font-bold text-xs flex-shrink-0">AI</div>
-                    <div class="bg-purple-50 text-slate-800 p-4 rounded-2xl max-w-lg text-sm shadow-sm">
-                        ${aiResponseText}
-                    </div>
-                `;
-                chatMessages.appendChild(aiReplyBubble);
-                chatMessages.scrollTop = chatMessages.scrollHeight;
-            }, 1000);
-        }
-
-        // Image Generation Handler (Fixed and Fully Working)
-        function handleImageSubmit(event) {
-            event.preventDefault();
-            const promptInput = document.getElementById('image-prompt');
-            if (!promptInput) return;
-
-            const prompt = promptInput.value.trim();
-            if (!prompt) return;
-
-            const loader = document.getElementById('image-loader');
-            const resultContainer = document.getElementById('image-result-container');
-            const generatedImg = document.getElementById('generated-image');
-            const caption = document.getElementById('image-caption');
-            const submitBtn = document.getElementById('image-submit-btn');
-
-            if (loader) loader.classList.remove('hidden');
-            if (resultContainer) resultContainer.classList.add('hidden');
-            if (submitBtn) submitBtn.disabled = true;
-
-            setTimeout(() => {
-                if (loader) loader.classList.add('hidden');
-                if (submitBtn) submitBtn.disabled = false;
-
-                const encodedPrompt = encodeURIComponent(prompt);
-                if (generatedImg) generatedImg.src = `https://picsum.photos/seed/${encodedPrompt}/800/450`;
-                if (caption) caption.textContent = `Generated Graphic for Prompt: "${prompt}"`;
-                if (resultContainer) resultContainer.classList.remove('hidden');
-            }, 1500);
-        }
-
-        function escapeHtml(text) {
-            const map = {
-                '&': '&amp;',
-                '<': '&lt;',
-                '>': '&gt;',
-                '"': '&quot;',
-                "'": '&#039;'
-            };
-            return text.replace(/[&<>"']/g, function(m) { return map[m]; });
-        }
-    </script>
 </body>
 </html>

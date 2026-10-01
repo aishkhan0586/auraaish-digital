@@ -1,0 +1,248 @@
+<!DOCTYPE html>
+<html lang="en" class="scroll-smooth">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>AI Hub & Assistant | Aura Aish Digital</title>
+    <meta name="description" content="Chat with our AI business consultant and generate custom brand visuals instantly.">
+    <link rel="canonical" href="https://aura-aish-digital.netlify.app/ai-hub.html">
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    colors: {
+                        brand: {
+                            50: '#f5f3ff',
+                            100: '#ede9fe',
+                            600: '#7c3aed',
+                            700: '#6d28d9',
+                            800: '#5b21b6',
+                            900: '#4c1d95',
+                        }
+                    }
+                }
+            }
+        }
+    </script>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
+    <style>
+        body { font-family: 'Inter', sans-serif; }
+    </style>
+    <script>
+        function sendQuickPrompt(promptText) {
+            document.getElementById('chat-input').value = promptText;
+            document.getElementById('chat-form').dispatchEvent(new Event('submit'));
+        }
+
+        function handleChatSubmit(event) {
+            event.preventDefault();
+            const inputField = document.getElementById('chat-input');
+            const messagesContainer = document.getElementById('chat-messages');
+            const userQuery = inputField.value.trim();
+            if(!userQuery) return;
+
+            // Append User Message
+            messagesContainer.innerHTML += `
+                <div class="flex items-start space-x-3 justify-end">
+                    <div class="bg-brand-600 text-white p-4 rounded-2xl max-w-lg text-sm shadow">
+                        ${userQuery}
+                    </div>
+                    <div class="w-8 h-8 rounded-full bg-slate-800 text-white flex items-center justify-center font-bold text-xs">You</div>
+                </div>
+            `;
+            inputField.value = '';
+            messagesContainer.scrollTop = messagesContainer.scrollHeight;
+
+            // Simulated AI Response
+            setTimeout(() => {
+                let aiReply = "That's an excellent question regarding your digital growth. At Aura Aish Digital, we recommend tailoring your strategy with robust SEO and modern tech stacks.";
+                if(userQuery.toLowerCase().includes('scale')) {
+                    aiReply = "To scale your e-commerce brand, focus on multi-channel marketing, high-performance web optimization, and schema markup for Google rich snippets.";
+                } else if(userQuery.toLowerCase().includes('seo')) {
+                    aiReply = "Top SEO strategies for 2026 include optimizing for AI-driven search engines, high-quality long-tail keywords, and ensuring fast Core Web Vitals.";
+                } else if(userQuery.toLowerCase().includes('ui/ux')) {
+                    aiReply = "Good UI/UX design reduces bounce rates, builds instant brand trust, and significantly increases your conversion rates.";
+                }
+
+                messagesContainer.innerHTML += `
+                    <div class="flex items-start space-x-3">
+                        <div class="w-8 h-8 rounded-full bg-brand-600 text-white flex items-center justify-center font-bold text-xs">AI</div>
+                        <div class="bg-purple-50 text-slate-800 p-4 rounded-2xl max-w-lg text-sm shadow">
+                            ${aiReply}
+                        </div>
+                    </div>
+                `;
+                messagesContainer.scrollTop = messagesContainer.scrollHeight;
+            }, 800);
+        }
+
+        function handleImageSubmit(event) {
+            event.preventDefault();
+            const prompt = document.getElementById('image-prompt').value.trim();
+            const loader = document.getElementById('image-loader');
+            const resultContainer = document.getElementById('image-result-container');
+            const generatedImage = document.getElementById('generated-image');
+            const caption = document.getElementById('image-caption');
+
+            if(!prompt) return;
+
+            loader.classList.remove('hidden');
+            resultContainer.classList.add('hidden');
+
+            setTimeout(() => {
+                loader.classList.add('hidden');
+                resultContainer.classList.remove('hidden');
+                // Use a placeholder image representing the prompt
+                generatedImage.src = `https://images.unsplash.com/photo-1618005182384-a83a8bd57fbe?auto=format&fit=crop&w=800&q=80`;
+                caption.innerText = `Generated for prompt: "${prompt}"`;
+            }, 1200);
+        }
+    </script>
+</head>
+<body class="bg-slate-50 text-slate-800 antialiased min-h-screen flex flex-col justify-between">
+
+    <header class="bg-gradient-to-r from-slate-900 via-brand-900 to-slate-900 text-white shadow-xl sticky top-0 z-50">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-6 text-center">
+            <h1 class="text-3xl sm:text-4xl md:text-5xl font-extrabold tracking-tight bg-gradient-to-r from-purple-200 via-white to-purple-300 bg-clip-text text-transparent uppercase cursor-pointer" onclick="window.location.href='index.html'">
+                Aura Aish Digital
+            </h1>
+            <p class="mt-2 text-sm sm:text-base text-purple-200/90 max-w-2xl mx-auto font-light">
+                Empowering your digital future with elegance, cutting-edge technology, and innovative branding solutions.
+            </p>
+            
+            <nav class="mt-6 flex flex-wrap justify-center items-center gap-2 sm:gap-4">
+                <a href="index.html" class="px-5 py-2 rounded-full text-sm font-semibold transition-all duration-300 bg-purple-950/60 text-purple-200 hover:bg-purple-800/60 hover:text-white">
+                    Home
+                </a>
+                <a href="services.html" class="px-5 py-2 rounded-full text-sm font-semibold transition-all duration-300 bg-purple-950/60 text-purple-200 hover:bg-purple-800/60 hover:text-white">
+                    Services
+                </a>
+                <a href="faqs.html" class="px-5 py-2 rounded-full text-sm font-semibold transition-all duration-300 bg-purple-950/60 text-purple-200 hover:bg-purple-800/60 hover:text-white">
+                    FAQs
+                </a>
+                <a href="ai-hub.html" class="px-5 py-2 rounded-full text-sm font-semibold transition-all duration-300 bg-white text-brand-900 shadow-md flex items-center space-x-1.5">
+                    <span>✨ AI Assistant & Hub</span>
+                </a>
+            </nav>
+        </div>
+    </header>
+
+    <main class="flex-grow max-w-7xl w-full mx-auto px-4 sm:px-6 lg:px-8 py-10 space-y-12">
+        <div class="bg-white rounded-3xl shadow-xl overflow-hidden border border-purple-100">
+            <div class="relative h-64 sm:h-80 w-full overflow-hidden bg-slate-900">
+                <img src="https://images.unsplash.com/photo-1618005182384-a83a8bd57fbe?auto=format&fit=crop&w=1200&q=80" 
+                     onerror="this.src='https://placehold.co/1200x500/5b21b6/ffffff?text=AI+Assistant'" 
+                     alt="AI Technology" 
+                     class="w-full h-full object-cover opacity-80">
+                <div class="absolute inset-0 bg-gradient-to-t from-slate-950/90 via-slate-950/30 to-transparent flex items-center justify-center text-center p-6">
+                    <div>
+                        <span class="bg-purple-600 text-white text-xs font-bold uppercase tracking-widest px-3 py-1 rounded-full">Interactive AI Assistant</span>
+                        <h2 class="text-3xl sm:text-5xl font-extrabold text-white mt-3">Aura AI Assistant & Generator</h2>
+                        <p class="text-purple-200 mt-2 max-w-xl mx-auto text-sm sm:text-base">Chat with our AI business consultant or generate custom brand visuals instantly.</p>
+                    </div>
+                </div>
+            </div>
+
+            <div class="p-6 sm:p-10 lg:p-12 space-y-12">
+                <div class="bg-slate-50 rounded-3xl p-6 sm:p-8 border border-purple-100 shadow-sm space-y-6">
+                    <div class="flex items-center space-x-3">
+                        <span class="text-3xl">🤖</span>
+                        <div>
+                            <h3 class="text-xl font-bold text-slate-900">Aura Digital Business Consultant</h3>
+                            <p class="text-sm text-slate-600">Ask questions about scaling your brand, SEO strategies, or tech development.</p>
+                        </div>
+                    </div>
+
+                    <div id="chat-messages" class="h-80 overflow-y-auto bg-white rounded-2xl p-4 border border-slate-200 space-y-4">
+                        <div class="flex items-start space-x-3">
+                            <div class="w-8 h-8 rounded-full bg-brand-600 text-white flex items-center justify-center font-bold text-xs">AI</div>
+                            <div class="bg-purple-50 text-slate-800 p-4 rounded-2xl max-w-lg text-sm">
+                                Hello! I am your Aura Aish Digital AI Assistant. How can I help you elevate your business today?
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="flex flex-wrap gap-2">
+                        <button type="button" onclick="sendQuickPrompt('How can Aura Aish Digital help me scale my e-commerce brand?')" class="text-xs bg-purple-100 hover:bg-purple-200 text-brand-900 px-3 py-1.5 rounded-full font-medium transition-colors">
+                            💡 Scale my brand
+                        </button>
+                        <button type="button" onclick="sendQuickPrompt('What are the top SEO strategies for 2026?')" class="text-xs bg-purple-100 hover:bg-purple-200 text-brand-900 px-3 py-1.5 rounded-full font-medium transition-colors">
+                            📈 Top SEO Strategies
+                        </button>
+                        <button type="button" onclick="sendQuickPrompt('Explain the importance of UI/UX design in modern websites.')" class="text-xs bg-purple-100 hover:bg-purple-200 text-brand-900 px-3 py-1.5 rounded-full font-medium transition-colors">
+                            🎨 UI/UX Importance
+                        </button>
+                    </div>
+
+                    <form id="chat-form" onsubmit="handleChatSubmit(event)" class="flex gap-3">
+                        <input type="text" id="chat-input" placeholder="Type your business question here..." required
+                               class="flex-grow px-4 py-3 rounded-xl border border-slate-300 focus:outline-none focus:border-brand-600 text-sm bg-white">
+                        <button type="submit" id="chat-submit-btn" class="bg-brand-600 hover:bg-brand-700 text-white font-semibold px-6 py-3 rounded-xl transition-all shadow-md text-sm">
+                            Send
+                        </button>
+                    </form>
+                </div>
+
+                <div class="bg-slate-50 rounded-3xl p-6 sm:p-8 border border-purple-100 shadow-sm space-y-6">
+                    <div class="flex items-center space-x-3">
+                        <span class="text-3xl">🎨</span>
+                        <div>
+                            <h3 class="text-xl font-bold text-slate-900">AI Brand Logo & Visual Generator</h3>
+                            <p class="text-sm text-slate-600">Create stunning conceptual graphics and logos instantly.</p>
+                        </div>
+                    </div>
+
+                    <form id="image-form" onsubmit="handleImageSubmit(event)" class="space-y-4">
+                        <div>
+                            <label class="block text-xs font-semibold uppercase tracking-wider text-slate-600 mb-2">Image Prompt</label>
+                            <input type="text" id="image-prompt" placeholder="e.g., A luxury golden crown logo with purple aura for a digital tech agency" required
+                                   class="w-full px-4 py-3 rounded-xl border border-slate-300 focus:outline-none focus:border-brand-600 text-sm bg-white">
+                        </div>
+                        <div class="flex flex-wrap gap-4 items-center">
+                            <div>
+                                <label class="block text-xs font-semibold uppercase tracking-wider text-slate-600 mb-1">Aspect Ratio</label>
+                                <select id="image-aspect" class="px-4 py-2 rounded-xl border border-slate-300 focus:outline-none focus:border-brand-600 text-sm bg-white">
+                                    <option value="1:1">1:1 Square</option>
+                                    <option value="16:9" selected>16:9 Landscape</option>
+                                    <option value="9:16">9:16 Portrait</option>
+                                </select>
+                            </div>
+                            <div class="pt-5">
+                                <button type="submit" id="image-submit-btn" class="bg-brand-600 hover:bg-brand-700 text-white font-semibold px-8 py-3 rounded-xl transition-all shadow-md text-sm">
+                                    Generate Image
+                                </button>
+                            </div>
+                        </div>
+                    </form>
+
+                    <div id="image-result-container" class="hidden pt-4 text-center space-y-4">
+                        <div class="relative rounded-2xl overflow-hidden border border-slate-300 bg-white inline-block max-w-full shadow-lg">
+                            <img id="generated-image" src="" alt="Generated AI Graphic" class="max-h-[450px] w-auto mx-auto object-contain">
+                        </div>
+                        <div>
+                            <p id="image-caption" class="text-xs text-slate-500"></p>
+                        </div>
+                    </div>
+
+                    <div id="image-loader" class="hidden py-12 text-center space-y-3">
+                        <div class="inline-block animate-spin rounded-full h-10 w-10 border-4 border-brand-600 border-t-transparent"></div>
+                        <p class="text-sm font-medium text-slate-600">Generating your AI masterpiece...</p>
+                    </div>
+                </div>
+
+                <div class="text-center pt-6 border-t border-slate-200">
+                    <a href="index.html" class="inline-flex items-center space-x-2 bg-brand-600 hover:bg-brand-700 text-white font-semibold px-6 py-3 rounded-full transition-all shadow-md">
+                        <span>← Back to Home Page</span>
+                    </a>
+                </div>
+            </div>
+        </div>
+    </main>
+
+    <footer class="bg-slate-900 text-purple-200 text-center py-6 border-t border-purple-950 mt-12">
+        <p class="text-sm">&copy; 2026 Aura Aish Digital. All rights reserved.</p>
+    </footer>
+
+</body>
+</html>
