@@ -49,7 +49,10 @@
   table { width: 100%; border-collapse: collapse; margin: 20px 0; }
   th, td { border: 1px solid var(--ln); padding: 12px; text-align: left; }
   th { background: #2a2108; color: #fff; }
+  details { background: var(--card); border: 1px solid var(--ln); margin-bottom: 10px; padding: 15px; border-radius: 8px; cursor: pointer; }
+  summary { font-weight: bold; color: #fff; }
   footer { border-top: 1px solid var(--ln); padding-top: 20px; margin-top: 40px; text-align: center; }
+  input, textarea { width: 100%; padding: 10px; margin: 8px 0; border-radius: 6px; border: 1px solid var(--ln); background: #080d21; color: #fff; }
 </style>
 </head>
 <body>
@@ -73,7 +76,7 @@
   <section id="home" style="padding: 50px 0;">
     <p style="color: var(--green);">SEO expert, serving clients worldwide</p>
     <h1>SEO Services to Rank Your Website <em>on Page 1 of Google</em></h1>
-    <p>Website not showing on Google? We fix technical SEO, on-page SEO and link building, and get your brand cited in AI search (GEO and AEO).</p>
+    <p>Website not showing on Google? We fix technical SEO, on-page SEO and link building, and get your brand cited in AI search (GEO and AEO). Clients in any country.</p>
     <p>
       <a class="btn" href="#contact">Get a free SEO audit</a>
       <a class="btn" href="#services" style="background:none; border:1px solid var(--green); color:#fff !important;">See services</a>
@@ -83,7 +86,7 @@
   <!-- About Us Section -->
   <section>
     <h2>Transforming Ideas Into Digital Reality</h2>
-    <p>We bridge the gap between creative elegance and robust technology, so modern businesses can grow online and be found worldwide.</p>
+    <p>Welcome to Aura Aish Digital’s online hub. We bridge the gap between creative elegance and robust technology, so modern businesses can grow online and be found worldwide.</p>
     <div class="grid">
       <div class="card"><h3>100+</h3><p>Successful global projects delivered</p></div>
       <div class="card"><h3>99%</h3><p>Client satisfaction rate</p></div>
@@ -91,14 +94,43 @@
     </div>
   </section>
 
+  <!-- Common SEO Problems -->
+  <section>
+    <h2>Which of these sounds like your website?</h2>
+    <div class="grid">
+      <div class="card">
+        <h3>01. My website is not showing on Google</h3>
+        <p>We check indexing, noindex tags and robots rules, then get your pages found.</p>
+        <a href="#contact">Fix: indexing audit →</a>
+      </div>
+      <div class="card">
+        <h3>02. I get no traffic from SEO</h3>
+        <p>We find the keywords people really search and fix the pages that should rank.</p>
+        <a href="#contact">Fix: keyword and content plan →</a>
+      </div>
+      <div class="card">
+        <h3>03. I want to rank on the first page</h3>
+        <p>Better content, faster pages and trusted backlinks to beat the sites above you.</p>
+        <a href="#contact">Fix: on-page and link building →</a>
+      </div>
+      <div class="card">
+        <h3>04. ChatGPT and AI Overviews skip my brand</h3>
+        <p>We structure your content so AI tools can understand, trust and quote it.</p>
+        <a href="#contact">Fix: GEO and AEO →</a>
+      </div>
+    </div>
+  </section>
+
   <!-- Services Section -->
   <section id="services">
-    <h2>Our SEO Services</h2>
+    <h2>SEO Services for Every Stage</h2>
     <div class="grid">
-      <div class="card"><h3>Technical SEO</h3><p>Crawlability, indexing, page speed, Core Web Vitals, sitemaps and structured data.</p></div>
-      <div class="card"><h3>On-Page SEO</h3><p>Meta tags, heading hierarchy, internal linking and search intent optimization.</p></div>
-      <div class="card"><h3>Link Building</h3><p>High-quality backlinks, domain authority growth and brand mentions.</p></div>
-      <div class="card"><h3>GEO & AEO</h3><p>Structured content for ChatGPT, Claude, Gemini and Google AI Overviews.</p></div>
+      <div class="card"><h3>Technical SEO</h3><p>Crawlability, indexing, page speed, Core Web Vitals, sitemaps and structured data, audited and fixed.</p></div>
+      <div class="card"><h3>International SEO</h3><p>Hreflang, country keyword research and localized content so every market finds the right version of your site.</p></div>
+      <div class="card"><h3>On-Page SEO</h3><p>Meta tags, heading hierarchy, internal linking and content that matches what people search for.</p></div>
+      <div class="card"><h3>Link Building</h3><p>High-quality backlinks, domain authority growth and brand mentions that build trust worldwide.</p></div>
+      <div class="card"><h3>GEO & AEO</h3><p>Content structured so ChatGPT, Claude, Gemini and Google AI Overviews can find, trust and cite it.</p></div>
+      <div class="card"><h3>Local SEO</h3><p>Google Business Profile, local citations and reviews that win map-pack visibility in your city.</p></div>
     </div>
   </section>
 
@@ -170,10 +202,10 @@
     <h2>Tools Behind Every Audit</h2>
     <table>
       <tr><th>Tool</th><th>Role</th></tr>
-      <tr><td>Google Search Console</td><td>Indexing, queries, CTR and performance.</td></tr>
-      <tr><td>Screaming Frog</td><td>Crawls for broken links and duplicate tags.</td></tr>
-      <tr><td>Google Analytics (GA4)</td><td>Traffic, engagement and conversions.</td></tr>
-      <tr><td>Ahrefs & SEMrush</td><td>Keywords, backlinks and competitor tracking.</td></tr>
+      <tr><td>Google Search Console</td><td>Indexing, queries, CTR and performance by country.</td></tr>
+      <tr><td>Screaming Frog</td><td>Crawls that find broken links, redirects and duplicate tags.</td></tr>
+      <tr><td>Google Analytics (GA4)</td><td>Traffic, engagement and conversions by region.</td></tr>
+      <tr><td>Ahrefs and SEMrush</td><td>Keywords, backlinks and competitor tracking.</td></tr>
     </table>
   </section>
 
@@ -181,27 +213,54 @@
   <section id="faqs">
     <h2>Frequently Asked Questions</h2>
     <details>
-      <summary><strong>What is SEO and how does it work?</strong></summary>
-      <p>SEO (search engine optimization) improves a website so it ranks higher in Google search results.</p>
+      <summary>What is SEO and how does it work?</summary>
+      <p>SEO (search engine optimization) is the practice of improving a website so it ranks higher in Google. Search engines crawl pages, judge relevance and quality, then show the best matches for each search.</p>
     </details>
     <details>
-      <summary><strong>Why is my website not showing on Google?</strong></summary>
-      <p>Common reasons include indexing blocks, new domain age, or missing sitemaps. A free audit shows your exact cause.</p>
+      <summary>Why is my website not showing on Google?</summary>
+      <p>Common reasons: the site is new, Google has not indexed it, a noindex tag or robots.txt rule blocks it, or the content has little authority next to competing pages. A free audit shows which one applies to you.</p>
+    </details>
+    <details>
+      <summary>How long does SEO take to work?</summary>
+      <p>Most sites see early movement in 2 to 3 months and stronger results after 6 months or more. Timing depends on competition, site age, content quality and technical health.</p>
+    </details>
+    <details>
+      <summary>How much does SEO cost?</summary>
+      <p>It depends on your market, competition and goals. Many small businesses pay a monthly fee, while larger international projects cost more.</p>
+    </details>
+    <details>
+      <summary>What are GEO and AEO?</summary>
+      <p>GEO (Generative Engine Optimization) and AEO (Answer Engine Optimization) structure content so AI tools like ChatGPT, Gemini, and Google AI Overviews can quote it.</p>
     </details>
   </section>
 
-  <!-- Contact Section -->
+  <!-- Contact Form Section -->
   <section id="contact">
     <h2>Get Your <em>Free SEO Audit</em></h2>
+    <p>Share your website and goals. We reply with a clear list of what to fix first.</p>
     <div class="card">
-      <p>Email your URL to get a priority list of fixes:</p>
-      <p>Email: <a href="mailto:aiskkhan0586@gmail.com">aiskkhan0586@gmail.com</a></p>
+      <form action="mailto:aiskkhan0586@gmail.com" method="post" enctype="text/plain">
+        <input type="text" name="name" placeholder="Your Name" required>
+        <input type="email" name="email" placeholder="Your Email" required>
+        <input type="url" name="website" placeholder="Website URL" required>
+        <input type="text" name="country" placeholder="Target Countries">
+        <textarea name="message" rows="4" placeholder="Your Message"></textarea>
+        <button class="btn" type="submit" style="cursor:pointer; border:none;">Send Audit Request</button>
+      </form>
+      <p style="margin-top:15px;">Direct Email: <a href="mailto:aiskkhan0586@gmail.com">aiskkhan0586@gmail.com</a></p>
     </div>
   </section>
 
   <!-- Footer -->
   <footer>
     <p><strong>Aura Aish Digital.</strong> Global SEO services for businesses worldwide.</p>
+    <p>
+      <a href="#services">Services</a> · 
+      <a href="#pricing">Pricing</a> · 
+      <a href="#testimonials">Reviews</a> · 
+      <a href="#faqs">FAQs</a> · 
+      <a href="#contact">Free Audit</a>
+    </p>
     <p>&copy; 2026 Aura Aish Digital | Email: <a href="mailto:aiskkhan0586@gmail.com">aiskkhan0586@gmail.com</a></p>
   </footer>
 
